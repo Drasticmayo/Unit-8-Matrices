@@ -1,6 +1,6 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
-//Name -
+//Name - Jude A
 
 import java.util.*;
 import java.io.*; 
@@ -15,14 +15,13 @@ public class MatrixCount1
 
     public static int count( int val  )
     {
-        int rows = m.length;
         int count = 0;
 
-        for(int i = 0; i<rows; i++)
+		for (int k = 0; k < m.length; k++)
         {
-            for(int j : m[i])
+            for (int i = 0; i < m[k].length; i++)
             {
-                if(j==val)
+                if (m[k][i] == val)
                 {
                     count++;
                 }
